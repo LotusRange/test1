@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void doNothing(){
         print("do nothing");
+        print("pull")
     }
 
 }
