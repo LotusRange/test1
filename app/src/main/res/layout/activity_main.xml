@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/te"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0303"
+        android:text="Restart"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="restart"
+        tools:text="Restart" />
+    <EditText
+    android:id="@+id/Number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/Text1"
+    android:layout_centerInParent="true"
+    android:background="#FF0303"
+    android:text= "0"
+    app:layout_constraintBottom_toBottomOf="parent"
+
+    app:layout_constraintLeft_toLeftOf="parent"
+    tools:text="Ohad"></EditText>
+
+    <Button
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:background="#FF0303"
+        app:backgroundTint="#A60000"
+        android:onClick="check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        tools:text="Check"></Button>
+
+    <Button
+        android:id="@+id/Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Text1"
+        android:layout_toLeftOf="@id/Text1"
+
+        android:background="#FF0303"
+        android:text= "+"
+        app:backgroundTint="#A60000"
+        android:onClick="onLeftBClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></Button>
+
+
+    <Button
+        android:id="@+id/ToTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Text1"
+        android:layout_marginRight="60dp"
+
+        android:layout_marginBottom="61dp"
+        android:layout_toLeftOf="@id/Text1"
+        android:background="#FF0303"
+        android:onClick="Random"
+        android:text="10"
+        app:backgroundTint="#A60000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></Button>
+
+    <Button
+
+        android:id="@+id/ToFifthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Text1"
+        android:layout_marginRight="-100dp"
+
+        android:layout_marginBottom="58dp"
+        android:layout_toLeftOf="@id/Text1"
+        android:background="#FF0303"
+        android:onClick="Random2"
+        android:text="50"
+        app:backgroundTint="#A60000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/ToHundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Text1"
+        android:layout_marginRight="-242dp"
+
+        android:layout_marginBottom="60dp"
+        android:layout_toLeftOf="@id/Text1"
+        android:background="#FF0303"
+        android:onClick="Random3"
+        android:text="100"
+        app:backgroundTint="#A60000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></Button>
+
+    <Button
+        android:id="@+id/Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Text1"
+        android:layout_toRightOf="@id/Text1"
+        android:onClick="onRightBClick"
+        app:backgroundTint="#A60000"
+        android:text="-" />
+
+
+</RelativeLayout>
